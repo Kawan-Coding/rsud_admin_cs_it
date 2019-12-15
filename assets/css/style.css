@@ -7,7 +7,7 @@
 }
 
 .form-control {
-    border-radius: 50rem!important;
+    border-radius: 50rem;
 }
 
 form input {
@@ -92,4 +92,8 @@ form input {
 
 .custom-file-label::after {
     display: none;
+}
+
+.txt-purple{
+    color: #C40D75;
 }
