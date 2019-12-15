@@ -1,0 +1,95 @@
+.btn {
+    border-radius: 30px;
+}
+
+.btn-lg {
+    border-radius: 10px;
+}
+
+.form-control {
+    border-radius: 50rem!important;
+}
+
+form input {
+    margin-bottom: 0.3em;
+}
+
+.img-mini {
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.img-jumbo {
+    height: 50px !important;
+    width: 50px !important;
+}
+
+.navbar-nav li {
+    margin-right: 0.5em;
+}
+
+#list-dashboard .w-70 {
+    margin-bottom: 0.3em;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.w-10 {
+    width: 20% !important;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+#navigate .btn-lg {
+    margin-bottom: 0.3em;
+}
+
+.list {
+    width: 120px;
+}
+
+.btn-blue {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-orange {
+    background-color: tomato;
+    color: white;
+}
+
+.btn-pink {
+    background-color: violet;
+    color: white;
+}
+
+.font-mini {
+    font-size: 0.5em;
+}
+
+.card-body h6 {
+    margin-top: -1em;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, .07)
+}
+
+.bgprofil {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(79, 144, 2, 1) 50%);
+}
+
+.img-cover {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.custom-file-label::after {
+    display: none;
+}
