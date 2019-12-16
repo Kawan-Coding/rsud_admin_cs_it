@@ -63,7 +63,12 @@ form input {
 }
 
 .btn-pink {
-    background-color: violet;
+    background-color: #F805B7;
+    color: white;
+}
+
+.btn-brown{
+    background-color: #DC5252;
     color: white;
 }
 
