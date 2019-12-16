@@ -7,7 +7,7 @@
 }
 
 .form-control {
-    border-radius: 50rem!important;
+    border-radius: 50rem;
 }
 
 form input {
@@ -63,7 +63,12 @@ form input {
 }
 
 .btn-pink {
-    background-color: violet;
+    background-color: #F805B7;
+    color: white;
+}
+
+.btn-brown{
+    background-color: #DC5252;
     color: white;
 }
 
@@ -92,4 +97,18 @@ form input {
 
 .custom-file-label::after {
     display: none;
+}
+
+.txt-purple{
+    color: #C40D75;
+}
+
+thead{
+    background-color: #70AD46 !important;
+    color: white;
+    text-align: center;
+}
+
+#table th,#table td {
+    border: 1px solid black !important;
 }
