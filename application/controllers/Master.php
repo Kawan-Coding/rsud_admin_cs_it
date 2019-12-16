@@ -1,23 +1,9 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Account extends CI_Controller
+class Master extends CI_Controller
 {
-	protected $table = "user_admin";
-	public function login()
-	{
-		$data = array(
-			'username' => post('username'),
-			'password' => post('password'),
-		);
-		$do = $this->data_custom->login($data);
-		if (!$do->error) {
-			success("Username dan password cocok", $do->data);
-		} else {
-			error('username dan password salah');
-		}
-	}
-
+	protected $table = "table";
 	public function create()
 	{
 		$data = array(
@@ -46,31 +32,22 @@ class Account extends CI_Controller
 			error("data gagal ditemukan");
 		}
 	}
-	
+
 	public function update()
 	{
 		$data = array(
-			'username' => post('username'),
-			'password' => post('password'),
+			"column" => post('column'),
 		);
+
 		$where = array(
-			'username' => post('username_lama'),
-			'password' => post('password_lama'),
+			"id" => post('id'),
 		);
-		$do = $this->data_model->update('user_admin', $where, $data);
+
+		$do = $this->data_model->update($this->table, $where, $data);
 		if (!$do->error) {
-			$data2 = array(
-				'email' => post('email'),
-				'phone' => post('phone'),
-			);
-			$do = $this->data_model->update('user_accounts', array('id' => post('user_account_id'), $data2));
-			if (!$do->error) {
-				success("berhasil melakukan update akun", array_merge($data, $data2));
-			} else {
-				error("gagal melakukan update akun");
-			}
+			success("data berhasil diubah", $do->data);
 		} else {
-			error('gagal melakukan update username & password');
+			error("datat gagal diubah");
 		}
 	}
 
