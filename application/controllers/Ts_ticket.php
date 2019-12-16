@@ -52,7 +52,19 @@ class Ts_ticket extends CI_Controller
 	public function update()
 	{
 		$data = array(
-			"column" => post('column'),
+			'roomcategory_id' =>post('roomcategory_id'),
+			'roomdetail_id' =>post('roomdetail_id'),
+			'assetcategory_id' =>post('assetcategory_id'),
+			'useradmin_id' =>post('useradmin_id'),
+			'id_ticket_register' =>post('id_ticket_register'),
+			'id_asset_register' =>post('id_asset_register'),
+			'asset_name' =>post('asset_name'),
+			'user_name' =>post('user_name'),
+			'ticket_date' =>post('ticket_date'),
+			'description' =>post('description'),
+			'troubleshootingstatus_id' => 1,
+			'user_ent' =>post('user_ent'),
+			'date_ent' => date("Y-m-d H:i:s")
 		);
 
 		$where = array(
