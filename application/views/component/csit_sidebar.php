@@ -3,8 +3,9 @@
 		<div class="align-items-center my-3">
 			<img class="img-responsive w-40 " src="https://trello-attachments.s3.amazonaws.com/5df126306b68e96235431aad/5df131b2ae481a0efb0d92d9/5ac8d06424559539d6b7014ec073c5b5/logo_RSUD_App.png" alt="">
 		</div>
+		<nav>
 		<a href="<?= base_url('Admin_csit') ?>" class="text-decoration-none text-dark">
-			<div class="btn-lg shadow-sm card bg-success text-white">
+			<div class="btn-lg shadow-sm card ">
 				<div class="row">
 					<div class="col-3 d-flex align-items-center justify-content-center">
 						<img class="img-jumbo rounded-circle " src="https://cdn1-production-images-kly.akamaized.net/SsbPRwmKv2f0DBTYS_9Mxf5q5xM=/410x0:1526x1116/640x640/filters:quality(75):strip_icc():format(jpeg):watermark(kly-media-production/assets/images/watermarks/liputan6/watermark-color-square-new.png,540,20,0)/kly-media-production/medias/2347678/original/025595500_1535787118-Luna_Maya__20_.jpg" alt="">
@@ -68,5 +69,28 @@
 				</div>
 			</div>
 		</a>
+		</nav>
 	</div>
 </div>
+
+
+<script>
+ let bash_api = "<?php echo base_url('') ?>";
+ $(document).ready(function ($) {
+    var url = window.location.href;
+    var activePage = url;
+    console.log("TCL: activePage", activePage)
+    $('nav a').each(function () {
+		console.log(this.href);
+        var linkPage = this.href;
+
+        console.log("TCL: (activePage == linkPage)", (activePage == linkPage))
+        if (activePage == linkPage) {
+			
+            $(this).children().addClass("bg-success text-white");
+        }
+    });
+});
+ 
+
+</script>
