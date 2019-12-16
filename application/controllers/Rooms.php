@@ -21,9 +21,9 @@ class Rooms extends CI_Controller
 	public function get($id = null)
 	{
 		if ($id != null) {
-			$do = $this->data_custom->get_room($id);
+			$do = $this->data_custom->get_rooms($id);
 		} else {
-			$do = $this->data_custom->get_room();
+			$do = $this->data_custom->get_rooms();
 		}
 
 		if (!$do->error) {

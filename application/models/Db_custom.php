@@ -21,7 +21,7 @@ class Db_custom extends CI_Model
         }
     }
 
-    public function get_room($id = null)
+    public function get_rooms($id = null)
     {
         $query = $this->db
             ->select('room_details.*, room_categories.name as room_category, room_areas.name as room_area')
