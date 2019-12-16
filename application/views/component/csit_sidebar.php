@@ -42,7 +42,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="" class="text-decoration-none text-dark">
+		<a href="<?= base_url('Admin_csit/dataaset') ?>"  class="text-decoration-none text-dark">
 			<div class="btn-lg shadow-sm card">
 				<div class="row">
 					<div class="col-3 d-flex align-items-center justify-content-center">
@@ -55,7 +55,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="" class="text-decoration-none text-dark">
+		<a href="<?= base_url('Admin_csit/laporan') ?>" class="text-decoration-none text-dark">
 			<div class="btn-lg shadow-sm card">
 				<div class="row">
 					<div class="col-3 d-flex align-items-center justify-content-center">

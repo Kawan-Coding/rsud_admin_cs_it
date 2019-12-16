@@ -1,75 +1,64 @@
 <div class="card-body">
-    <h5 class="card-title">Dashboard</h5>
+    <h5 class="card-title">TIKET PERMINTAAN</h5>
     <div class="dropdown-divider"></div>
     <div class="row">
-        <div class="col">
-            <div class="shadow-sm btn-lg">
-                <div class="card-body">
-                    <h5 class="">Pelayanan Permintaan Hari Ini</h5>
-                    <div class="text-white" id="list-dashboard">
-                        <div>
-                            <span class="btn btn-blue w-70">Permintaan</span>
-                            <span class="btn btn-blue w-10 ml-3">25 </span>
-                        </div>
-                        <div>
-                            <span class="btn btn-orange w-70">Proses</span>
-                            <span class="btn btn-orange w-10 ml-3">25 </span>
-                        </div>
-                        <div>
-                            <span class="btn btn-pink w-70">Selesai</span>
-                            <span class="btn btn-pink w-10 ml-3">25 </span>
-                        </div>
-                        <div>
-                            <span class="btn btn-brown w-70">Pending</span>
-                            <span class="btn btn-brown w-10 ml-3">25 </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <div class="col-6">
+            <select class="btn btn-light w-100 mr-3">
+                <!-- <option selected>Pilih Unit</option> -->
+                <option value="1">Pilih Bulan</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
         </div>
-        <div class="col">
-            <div class="shadow-sm btn-lg">
-                <div class="card-body">
-                    <h5 class="">Lapor Cepat</h5>
-                    <div class="text-white " id="list-dashboard">
-                        <div class="pt-4">
-                            <input class="d-block form-control" value="Ariel_lovely@mail.com"></input>
-                        </div>
-                        <div class="pt-2">
-                            <input class="d-block form-control" value="Ariel_lovely@mail.com"></input>
-                        </div>
-                        <a href="<?= base_url('Admin_csit') ?>/laporcepat" type="submit" class="btn btn-success btn-lg shadow-sm px-4 mt-3 align-self-end ">TERBITKAN TIKET</a>
-                    </div>
-                </div>
-            </div>
+        <div class="col-6">
+            <select class="btn btn-light w-100 mr-3">
+                <!-- <option selected>Pilih Unit</option> -->
+                <option value="1">Pilih Tahun</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <div class="col-10 pt-4">
+            <select class="btn btn-light w-100 mr-3">
+                <option value="1">Pilih Ruangan</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <div class="col-2 mt-4">
+            <button type="submit" class="btn btn-warning btn-lg shadow-sm px-4 ">LOCK</button>
         </div>
     </div>
 </div>
 <div class="col">
     <div class="shadow-sm btn-lg mx-1 mb-5">
         <div class="card-body">
-            <h6 class="">Aktifitas Pelayanan</h6>
+            <h6 class="text-left">Aktifitas Pelayanan</h6>
             <h6 class="text-right">
-                <a href="">Perbaikan</a> | <a href="">Maintenance</a>
+                <a href="">Aktifitas</a> | <a href="">Spare Part</a>
             </h6>
+
             <table id="table" class="table table-striped table-bordered">
-                <thead>
+                <thead id="thead_tp">
                     <tr>
                         <th rowspan="2">No</th>
-                        <th colspan="4">Permintaan</th>
+                        <th rowspan="2">Tanggal</th>
+                        <th rowspan="2">Jenis</th>
+                        <th colspan="3">Permintaan</th>
                         <th colspan="2">Aset</th>
-                        <th rowspan="2">Status <br /> Pelayanan</th>
-                        <th rowspan="2">Status <br /> Tiket</th>
+                        <th colspan="2">Lokasi Aset</th>
                         <th rowspan="2">Petugas</th>
-                        <th rowspan="2">Action</th>
+                        <th rowspan="2">Status <br /> Tiket </th>
                     </tr>
                     <tr>
-                        <th>Jenis</th>
                         <th>Tiket</th>
                         <th>Waktu</th>
                         <th>Ruangan</th>
                         <th>ID Aset</th>
                         <th>Nama Aset</th>
+                        <th>Area Ruangan</th>
+                        <th>Detail Ruangan</th>
                     </tr>
                 </thead>
                 <tbody id="tbodyid">
@@ -78,6 +67,10 @@
             </table>
         </div>
     </div>
+</div>
+
+<div class="col-12  align-self-end">
+    <button type="submit" class="btn btn-success btn-lg shadow-sm px-4 mt-3">TERBITKAN</button>
 </div>
 
 <style>

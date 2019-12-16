@@ -53,19 +53,27 @@ class Admin_csit extends CI_Controller
 		);
 		$this->load->view('template', array_merge($data, $this->template));
 	}
-	public function profil_admin_edit()
+	public function dataaset()
 	{
 		$data = array(
-			'content' => 'content/ap_profil_admin_edit',
+			'content' => 'content/cist_dataaset',
 		);
-        $this->load->view('template', array_merge($data,$this->template));
+		$this->load->view('template', array_merge($data, $this->template));
 	}
+	public function laporan()
+	{
+		$data = array(
+			'content' => 'content/cist_laporan',
+		);
+		$this->load->view('template', array_merge($data, $this->template));
+	}
+	
 	public function Login()
 	{
         $this->load->view('login');
 	}
 	public function welcome()
 	{
-        $this->load->view('ap_setelah_login');
+        $this->load->view('csit_setelah_login');
 	}
 }

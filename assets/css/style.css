@@ -97,3 +97,13 @@ form input {
 .txt-purple{
     color: #C40D75;
 }
+
+thead{
+    background-color: #70AD46 !important;
+    color: white;
+    text-align: center;
+}
+
+#table th,#table td {
+    border: 1px solid black !important;
+}
